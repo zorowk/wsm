@@ -1,8 +1,8 @@
 swm_compositor = static_library(
 	'swm-compositor',
 	files(
-        'wsm-server.c',
-        'wsm-server.h',
+        'wsm_server.c',
+        'wsm_server.h',
 	),
 	dependencies: [
         wlroots,

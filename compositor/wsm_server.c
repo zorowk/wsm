@@ -1,5 +1,5 @@
 #define _POSIX_C_SOURCE 200112L
-#include "wsm-server.h"
+#include "wsm_server.h"
 
 #include <assert.h>
 #include <getopt.h>

@@ -1,6 +1,6 @@
 #define _POSIX_C_SOURCE 200112L
 
-#include "compositor/wsm-server.h"
+#include "compositor/wsm_server.h"
 
 #include <assert.h>
 #include <getopt.h>
