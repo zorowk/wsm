@@ -59,6 +59,9 @@ drm_full = dependency('libdrm') # only needed for drm_fourcc.h
 drm = drm_full.partial_dependency(compile_args: true, includes: true)
 libudev = dependency('libudev')
 threads = dependency('threads') # for pthread_setschedparam
+pipewire = dependency('libpipewire-0.3')
+spa = dependency('libspa-0.2')
+gbm = dependency('gbm')
 
 wlroots_features = {
 	'xwayland': false,
@@ -137,7 +140,10 @@ wsm_deps = [
         libinput,
         drm_full,
         libudev,
-        threads
+        threads,
+        pipewire,
+        spa,
+        gbm
 ]
 
 config = configuration_data()
