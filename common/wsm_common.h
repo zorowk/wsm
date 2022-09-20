@@ -1,6 +1,8 @@
 #ifndef WSM_COMMON_H
 #define WSM_COMMON_H
 
+#include <stdbool.h>
+
 #include <pixman.h>
 #include <wayland-client-protocol.h>
 
@@ -35,6 +37,7 @@ struct wsm_window_info
     enum wsm_window_state window_state;
 
     // Window Effect
+    bool full_window_blur;
     float window_radius;
     pixman_region32_t blur_region;
 

@@ -115,6 +115,7 @@ subdir('protocols')
 subdir('common')
 subdir('effects')
 subdir('compositor')
+subdir('gesture')
 
 wsm_sources = files(
         'main.c',
@@ -147,7 +148,7 @@ executable(
         'wsm',
         wsm_sources,
         dependencies: wsm_deps,
-        link_with: [swm_compositor, swm_common],
+        link_with: [swm_compositor, swm_common, swm_gesture],
         install: true
 )
 
