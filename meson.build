@@ -116,6 +116,7 @@ subdir('common')
 subdir('effects')
 subdir('compositor')
 subdir('gesture')
+subdir('plugins')
 
 wsm_sources = files(
         'main.c',
